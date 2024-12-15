@@ -1,0 +1,107 @@
+body{
+    margin :0;
+}
+.outerContainer{
+    background-color: hsl(30, 54%, 90%);
+    justify-content: center;
+    display : flex;
+}
+
+.containerDiv{
+    padding : 30px 30px;
+    margin : 80px 0 80px 0;
+    background-color: white;
+    display : inline-block;
+    width : 40%;
+    border-radius: 10px;
+}
+
+.ingredientsContainer li{
+    line-height: 180%;
+}
+
+.prepTimeContainer{
+    background-color: rgb(248, 244, 247);
+    border-radius: 10px;
+    padding : 5px 15px;
+    line-height: 160%;
+}
+#nutritionContainer td{
+    line-height: 180%;
+    padding : 0 11rem 0 1rem;
+
+}
+
+ol{
+    line-height: 180%;
+
+}
+
+
+img{
+    width : 100%;
+    border-radius: 10px;
+}
+hr{
+    background-color : lightgrey;
+    border : none;
+    height: 1px;
+    width : 93%;
+}
+.content , td{
+    color: #707172;
+    font-weight: 100;
+}
+
+.mainHeading{
+    font-size: 2.5rem;
+}
+
+#prepHeading {
+    color : purple;
+    font-size: 1.2rem;
+    font-weight: 600
+
+
+}
+.otherHeading , .rightContent{
+    color : brown;
+}
+
+li::marker {
+    color: brown;
+}
+
+th,td{
+    border-bottom: 1px solid lightgrey; /* Adds a horizontal line */
+}
+
+@media (max-width: 968px){
+    .containerDiv{
+        padding : 0;
+        margin : 0;
+        background-color: white;
+        display : inline-block;
+        width : 100%;
+        border-radius: 10px;
+    }
+    img{
+        width:100%;
+    }
+    .imageContainer{
+        padding : 0;
+        margin :0;
+    }
+    .descriptionContainer , .ingredientsContainer, .prepTimeContainer {
+        display : inline-block;
+        width : 100%;
+        padding : 0 30px;
+    }
+    .instructionsContainer, .nutritionContainer{
+        display : inline-block;
+        padding-left : 20px;
+    }
+}
+
+
+
